@@ -1,0 +1,20 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+nav {
+    background: black;
+}
+
+.image_footer {
+    width: 25px;
+}

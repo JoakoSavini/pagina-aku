@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.contenedor-general {
+    display: flex;
+}
+
+#contenedor-aku {
+    width: 50%;
+}
+
+#aku {
+    width: 100%;
+}
+
+nav {
+    background: black;
+}
+
+.image_footer {
+    width: 35px;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=email]:focus,
+textarea.materialize-textarea:focus:not([read-only]) + label {
+    color: black;
+}
