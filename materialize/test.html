@@ -95,11 +95,30 @@
             padding-left: 25px;
         }
 
+        .foot-image-contenedor {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            backdrop-filter: blur(1px);
+            width: 20%;
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            /* El footer ocupa todo el ancho del body */
+        }
+
+        .images {
+            height: 35px;
+        }
+
     </style>
 </head>
 
 <body>
-    <div class="navbar-fixed">
+    <div class="navbar">
         <nav class="nav-wrapper z-depth-0 transparent">
             <div class="space-nav">
                 <a href="#" class="brand-logo white-text text-darken-4">Aku</a>
@@ -158,6 +177,14 @@
             </form>
         </div>
     </div>
+
+    <footer class="page-footer transparent">
+        <div class="row foot-image-contenedor">
+            <div><img class="images" src="images/whatsapp.svg" alt=""></div>
+            <div><img class="images" src="images/tiktok.svg" alt=""></div>
+            <div><img class="images" src="images/ig.svg" alt=""></div>
+        </div>
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
