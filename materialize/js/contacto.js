@@ -1,11 +1,12 @@
 //Obtengo la informacion del DOM
 document.getElementById('datos_form').addEventListener('submit', function(event){
     event.preventDefault();
-
-    const nombre = document.querySelector('#first_name');
-    const apellido = document.querySelector('#last_name');
-    const email = document.querySelector('#email');
-    const mensaje = document.querySelector('#message');
+    
+    
+    const nombre = document.querySelector('#first_name').value;
+    const apellido = document.querySelector('#last_name').value;
+    const email = document.querySelector('#email').value;
+    const mensaje = document.querySelector('#message').value;
 
     //*Si se valida, creo nuevo usuario
     if (validarDatos(nombre, apellido, email, mensaje)){
@@ -33,6 +34,7 @@ const validarDatos = (nombre, apellido, email, mensaje) => {
         alert('Complete todos los campos')
         return false;
     }
+    return true;
 }
 
 //*Para crear ID's
@@ -42,4 +44,5 @@ const generarID = () => {
     localStorage.setItem('idUsuario', id.toString());
     return id;
 }
+
 
