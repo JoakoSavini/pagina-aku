@@ -2,7 +2,6 @@
 document.getElementById('datos_form').addEventListener('submit', function(event){
     event.preventDefault();
     
-    
     const nombre = document.querySelector('#first_name').value;
     const apellido = document.querySelector('#last_name').value;
     const email = document.querySelector('#email').value;
