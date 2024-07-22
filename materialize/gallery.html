@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+    <style>
+        .row img {
+            width: 100%;
+            height: auto;
+            margin: 10px;
+            transition: transform 0.5s ease;
+        }
+
+        .row img:hover {
+            transform: scale(1.05);
+        }
+        
+        .vinculos {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .vinculos .row .col {
+            margin: 20px;
+        }
+
+        .material-icons {
+            padding: 10px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="row container-principal">
+        <a href="#" data-target="mobile-demo" class="hide-on-med-and-up sidenav-trigger"><i class="material-icons">menu</i></a>
+        <div class="col l2 m3  vinculos hide-on-small-only">
+            <div class="row">
+                <div class="col s12">
+                    <a href="#" class="filter" data-category="todas">Mostrar Todas</a>
+                </div>
+                <div class="col s12">
+                    <a href="#" class="filter" data-category="fiestas">Fiestas</a>
+                </div>
+                <div class="col s12">
+                    <a href="#" class="filter" data-category="restaurant">Restaurant</a>
+                </div>
+                <div class="col s12">
+                    <a href="#" class="filter" data-category="paisajes">Paisajes</a>
+                </div>
+                <div class="col s12">
+                    <a href="#" class="filter" data-category="emprendimientos">Emprendimientos</a>
+                </div>
+                <div class="col s12">
+                    <a href="#" class="filter" data-category="tatoos">Tatoos</a>
+                </div>
+            </div>
+        </div>
+        <div class="col s12 m9 l10 container">
+            <h2 class="center-align">Galería de Fotos</h2>
+            <div class="row grid">
+                <div class="col s6 m4 l3 grid-item" data-category="fiestas">
+                    <img src="https://cdn.myportfolio.com/aee931eb-db00-460c-9111-6f60ba9d5204/ff017f85-23ed-4d16-af7c-fad096a7bad7_rw_1920.jpg?h=f013273673676b44d11f7bd4eeec9fa9" alt="#">
+                </div>
+                <div class="col s6 m4 l3 grid-item" data-category="restaurant">
+                    <img src="https://cdn.myportfolio.com/aee931eb-db00-460c-9111-6f60ba9d5204/fe66fcc0-197d-419a-8146-049f2176b1a2_rw_600.jpg?h=fa6abe8500d9a16db1e8985b6e0b53ef" alt="#">
+                </div>
+                <div class="col s6 m4 l3 grid-item" data-category="tatoos">
+                    <img src="https://cdn.myportfolio.com/aee931eb-db00-460c-9111-6f60ba9d5204/dfec7128-1772-4951-a3ff-7491fe844797_rw_1200.jpg?h=99ca8a23c0ef57790000d27b344f0f40" alt="#">
+                </div>
+                <div class="col s6 m4 l3 grid-item" data-category="paisajes">
+                    <img src="https://cdn.myportfolio.com/aee931eb-db00-460c-9111-6f60ba9d5204/169c100e-9d91-40bf-b7aa-0c591ba2d8b3_rw_1200.jpg?h=89926ed5f1f94f9aade541012529f105" alt="#">
+                </div>
+                <div class="col s6 m4 l3 grid-item" data-category="emprendimientos">
+                    <img src="https://cdn.myportfolio.com/aee931eb-db00-460c-9111-6f60ba9d5204/2f1fecca-b6c2-483c-a6ca-704fcc4c59c0_rw_600.jpg?h=60b13216a66db3905f0b7194446d9609" alt="#">
+                </div>
+                <div class="col s6 m4 l3 grid-item" data-category="restaurant">
+                    <img src="https://cdn.myportfolio.com/aee931eb-db00-460c-9111-6f60ba9d5204/792dffdd-7bcf-4687-a092-0bd8f05b6b84_rw_600.jpg?h=9103a135fd6969e6f5d80ec592bac3e0" alt="#">
+                </div>
+                <div class="col s6 m4 l3 grid-item" data-category="paisajes">
+                    <img src="https://cdn.myportfolio.com/aee931eb-db00-460c-9111-6f60ba9d5204/f7a3ec0a-aa21-44d7-9893-e9172c1f9fb3_rw_600.jpg?h=a7e25babc482b677242a9ab3e4ddf346" alt="#">
+                </div>
+                <div class="col s6 m4 l3 grid-item" data-category="paisajes">
+                    <img src="https://cdn.myportfolio.com/aee931eb-db00-460c-9111-6f60ba9d5204/169c100e-9d91-40bf-b7aa-0c591ba2d8b3_rw_1200.jpg?h=89926ed5f1f94f9aade541012529f105" alt="#">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#" class="filter" data-category="todas">Mostrar Todas</a></li>
+        <li><a href="#" class="filter" data-category="fiestas">Fiestas</a></li>
+        <li><a href="#" class="filter" data-category="restaurant">Restaurant</a></li>
+        <li><a href="#" class="filter" data-category="paisajes">Paisajes</a></li>
+        <li><a href="#" class="filter" data-category="emprendimientos">Emprendimientos</a></li>
+        <li><a href="#" class="filter" data-category="tatoos">Tatoos</a></li>
+    </ul>
+
+      <!-- Importa el JavaScript de Materialize -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Masonry
+            var elem = document.querySelector('.grid');
+            var msnry = new Masonry(elem, {
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-item',
+                percentPosition: true
+            });
+
+            // Auto initialize Materialize
+            M.AutoInit();
+
+            // Filter images
+            document.querySelectorAll('.filter').forEach(function(filterLink) {
+                filterLink.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var category = this.getAttribute('data-category');
+                    document.querySelectorAll('.grid-item').forEach(function(item) {
+                        if (category === 'todas' || item.getAttribute('data-category') === category) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                    msnry.reloadItems(); // Re-lay out Masonry after filtering
+                    msnry.layout(); // Re-lay out Masonry after filtering
+                });
+            });
+        });
+    </script>
+</body>
+</html>
