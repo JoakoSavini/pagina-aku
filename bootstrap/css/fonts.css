@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Titillium Web';
+    src: url('/bootstrap/fonts/Titillium_Web/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Josefin Sans';
+    src: url('/bootstrap/fonts/Josefin_Sans/static/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('/bootstrap/fonts/Caveat/static/Caveat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Shadows Into Light';
+    src: url('/bootstrap/fonts/Shadows_Into_Light/ShadowsIntoLight-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playwrite Australia SA';
+    src: url('/bootstrap/fonts/Playwrite_AU_SA/static/PlaywriteAUSA-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Indie Flower';
+    src: url('/bootstrap/fonts/Indie_Flower/IndieFlower-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
