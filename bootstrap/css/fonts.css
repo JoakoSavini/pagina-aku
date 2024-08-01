@@ -46,3 +46,17 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Edu Australia';
+    src: url('/bootstrap/fonts/Edu_AU_VIC_WA_NT_Hand/static/EduAUVICWANTHand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Amatic';
+    src: url('/bootstrap/fonts/Amatic_SC/AmaticSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -10,17 +10,21 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <style>
-        html,
-        body {
+        html, body {
             height: 100%;
+            margin: 0;
         }
-
+        
         body {
+            background-image: url('images/about1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
         }
 
-        .icons a {
+        .icons a{
             font-size: 1.5rem;
         }
 
@@ -30,47 +34,41 @@
             top: -10px;
         }
 
-        .contenido {
+        .contenido{
             flex: 1;
+            padding-bottom: 50vh;
         }
-
-        img {
-            width: 20%;
-        }
-
-        .video-container {
-            display: flex;
-            justify-content: center;
-            /* Centra el video dentro del contenedor */
-        }
-
-        .video-container iframe {
-            width: 100%;
-            /* Asegura que el iframe ocupe todo el espacio disponible */
-            height: 200px;
-            /* Ajusta la altura según tus necesidades */
-            margin: 0;
-            /* Elimina el margen predeterminado del iframe */
-        }
-
-        .col-md-4 {
-            padding: 0 12px;
-            /* Reduce el padding horizontal entre columnas */
-        }
-
-        a {
-            font-family: 'Titillium Web';
-            color: black;
-            text-decoration: none;
-        }
-
-        div {
-            font-family: 'Titillium Web';
-        }
-
-        h2{
-            font-family: 'Caveat';
+        
+        h1{
+            font-family: 'Amatic';
             font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h3{
+            font-family:'Titillium Web' ;
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        p{
+            font-family:'Titillium Web' ;
+            margin-bottom: 0.5rem;
+        }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .vertical-spacer {
+            height: 30vh; /* Ajusta este valor según necesites */
+        }
+
+        .second-text {
+            width: 25%; /* Aumenta el ancho del texto */
+            margin-left: auto; /* Empuja el texto hacia la derecha */
+            padding-right: 2vw; /* 0.5% del ancho de la ventana */
+            margin-right: 2vw; /* 0.3% del ancho de la ventana */
         }
 
 
@@ -80,8 +78,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="index.html"><img class="img-fluid logo"
-                    src="images/logos/Photo by Aguzer0 white.png" alt=""></a>
+            <a class="navbar-brand text-white" href="index.html"><img class="img-fluid logo" src="images/logos/Photo by Aguzer0 white.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -90,7 +87,7 @@
             <div class="d-flex justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="about_me.html">Acerca de Mi</a>
+                        <a class="nav-link text-white" href="#">Acerca de Mi</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="servicios.html"> Fotos y Videos </a>
@@ -103,162 +100,73 @@
         </div>
     </nav>
 
-    <di class="contenido d-flex flex-column align-items-center">
-        <div class="row mb-5 mt-5 justify-content-center">
-            <h2 class="text-center">Foto Producto</h2>
-            <div class="contenedor-servicio text-center d-flex justify-content-center">
-                <div class="card mx-2" style="width: 18rem;">
-                    <img src="images/servicios/producto-modelo/p1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Destaca tus productos con fotografías profesionales que capturan cada detalle. Una correcta iluminación y composición asegura que tus productos se vean irresistibles y atractivos para tus clientes.</p>
-                    </div>
-                </div>
-                <div class="card mx-2" style="width: 18rem;">
-                    <img src="images/servicios/producto-modelo/p2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Potencia tus campañas de marketing con imágenes impactantes y de alta calidad. Tomo fotografías publicitarias que cuentan la historia de tu marca y conectan con tu audiencia.</p>
-                    </div>
-                </div>
-                <div class="card mx-2" style="width: 18rem;">
-                    <img src="images/servicios/producto-modelo/p3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Aumenta tus ventas en línea con fotografías de productos que reflejan su verdadera calidad y características. te ofrezco imágenes nítidas y claras que ayudan a tus clientes a tomar decisiones informadas.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">Ver Más</a>
-            </div>
-        </div>
-    
-        <div class="row mb-5 mt-5 justify-content-center">
-            <h2 class="text-center">Campaña de Moda</h2>
-            <div class="contenedor-servicio text-center d-flex justify-content-center">
-                <div class="card mx-2" style="width: 18rem;">
-                    <img src="images/servicios/modelo/m4.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Construye tu portafolio de modelaje con sesiones fotográficas personalizadas. Te ayudo a capturar varios looks y expresiones que muestran tu versatilidad y potencial en la industria.</p>
-                    </div>
-                </div>
-                <div class="card mx-2" style="width: 18rem;">
-                    <img src="images/servicios/modelo/m6.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Resalta las últimas tendencias y tu estilo único. Trabajo en colaboración contigo para crear imágenes impactantes y sofisticadas que destaquen en cualquier portafolio.</p>
-                    </div>
-                </div>
-                <div class="card mx-2" style="width: 18rem;">
-                    <img src="images/servicios/modelo/m5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Captura la esencia de tu personalidad con retratos artísticos. Mi enfoque creativo y profesional realzará tu belleza natural, creando imágenes atemporales que podrás atesorar para siempre.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">Ver Más</a>
-            </div>
-        </div>
+    <div class="contenido">
+        <div class="contenedor-titulo d-flex flex-column justify-content-center mb-3">
 
-        <div class="row mb-5 mt-5 justify-content-center">
-            <h2 class="text-center">Dron</h2>
-            <div class="contenedor-servicio text-center d-flex justify-content-center">
-                <div class="card mx-2" style="width: 18rem;">
-                    <img src="images/servicios/dron/d8.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Obtén una nueva perspectiva con fotografías aéreas. Utilizo un dron para capturar imágenes impresionantes de paisajes, eventos y propiedades desde ángulos únicos.</p>
-                    </div>
+            <div class="text-center">
+                <h1>Hola!</h1>
+            </div>
+
+            <h3 class="text-center"> Soy Augusto... </h3>
+
+            <div class="row justify-content-center">
+                
+                <div class="col-12 col-md-4 text-center">
+                    <p class="text-justify">Fotógrafo y filmmaker, preparado para nuevos trabajos. 
+                        Amo viajar y llevar conmigo mi camara & dron para guardar lo mas lindo de cada lugar.
+                        Intento combinar una realización cinematográfica dinámica con un gran poder visual, logrando que cada trabajo hable por si solo.
+                        Me apasiona experimentar diversos proyectos y que las personas puedan sentir lo mismo que sentí durante su creación.
+                        Más que una profesión, es una forma de vida, de conectar con el mundo.
+                        Únete a mí en este viaje y hagamos algo extraordinario juntos.
+                    </p>
                 </div>
-                <div class="card mx-2" style="width: 18rem;">
-                    <img src="images/servicios/dron/d5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Inmortaliza tus eventos con fotografías aéreas que capturan la magnitud y el ambiente. Desde festivales hasta bodas, el uso de un dron te proporciona una vista espectacular de cada momento especial.</p>
-                    </div>
-                </div>
-                <div class="card mx-2" style="width: 18rem;">
-                    <img src="images/servicios/dron/d7.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Capturo imágenes precisas y detalladas que se transforman en mapas y modelos tridimensionales. Ideal para arquitectura, construcción y planificación urbana, los diseños en 3D te ofrecen una visión integral y detallada de tus proyectos.</p>
-                    </div>
+                <div class="col-12 col-md-7 text-center"></div> <!-- Columna vacía para centrar --></div>
+                <div class="col-12 col-md-1"></div> <!-- Columna vacía para centrar -->
+            </div>
+
+            <div class="vertical-spacer"></div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9"></div> <!-- Columna vacía para centrar -->
+                <div class="col-12 col-md-2 text-center second-text">
+                    <p class="text-justify">Fotógrafo y filmmaker, preparado para nuevos trabajos. 
+                        Amo viajar y llevar conmigo mi camara & dron para guardar lo mas lindo de cada lugar.
+                        Intento combinar una realización cinematográfica dinámica con un gran poder visual, logrando que cada trabajo hable por si solo.
+                        Me apasiona experimentar diversos proyectos y que las personas puedan sentir lo mismo que sentí durante su creación.
+                        Más que una profesión, es una forma de vida, de conectar con el mundo.
+                        Únete a mí en este viaje y hagamos algo extraordinario juntos.
+                    </p>
                 </div>
             </div>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">Ver Más</a>
+
+            <div class="vertical-spacer"></div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 text-center">
+                    <p class="text-justify">Fotógrafo y filmmaker, preparado para nuevos trabajos. 
+                        Amo viajar y llevar conmigo mi camara & dron para guardar lo mas lindo de cada lugar.
+                        Intento combinar una realización cinematográfica dinámica con un gran poder visual, logrando que cada trabajo hable por si solo.
+                        Me apasiona experimentar diversos proyectos y que las personas puedan sentir lo mismo que sentí durante su creación.
+                        Más que una profesión, es una forma de vida, de conectar con el mundo.
+                        Únete a mí en este viaje y hagamos algo extraordinario juntos.
+                    </p>
+                </div>
+                <div class="col-12 col-md-7"></div> <!-- Columna vacía para centrar -->
             </div>
         </div>
-        
-
-        <div class="row mb-5 mt-5 justify-content-center">
-            <h2 class="text-center">Video Profesional</h2>
-            <div class="contenedor-servicio text-center d-flex justify-content-center">
-                <div class="card" style="width: 18rem;">
-                    <div class="video-container">
-                        <iframe id="video" src="images/servicios/videos-musicales/vp2.mp4" frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Video 1</h5>
-                        <p class="card-text">Eleva tu presencia en redes sociales con videos dinámicos y atractivos. Ya sea para promocionar productos, compartir historias o interactuar con tu audiencia, mis videos están diseñados para captar la atención y aumentar tu alcance.</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="video-container">
-                        <iframe id="video" src="images/servicios/videos-musicales/vp1.mp4" frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Video 2</h5>
-                        <p class="card-text">Comunica la misión y los logros de tu organización con videos institucionales impactantes. Mis videos ayudan a narrar tu historia, destacar tus iniciativas y conectar con tu audiencia de manera efectiva.</p>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/6WvWYXGFTOg" frameborder="0"
-                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Video 3</h5>
-                        <p class="card-text">Destaca tu música con videos creativos y de alta calidad. Trabajo contigo para transformar tus ideas en visuales impactantes que complementan tu estilo y narrativa musical, ayudando a captar la atención y potenciar el alcance de tu música.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-4">
-                <a href="#" class="btn btn-primary">Ver Más</a>
-            </div>
         </div>
-
-    </div>
 
     <footer class="bg-dark d-flex justify-content-center bg-transparent">
         <div class="icons">
             <a href="" class="me-3"> <i class="fa-brands fa-whatsapp" style="color: #000000;"></i> </a>
             <a href="" class="me-3"> <i class="fa-brands fa-tiktok" style="color: #000000;"></i></i> </a>
-            <a href="" class="me-3"> <i class="fa-brands fa-instagram" style="color: #000000;"></i> </a>
+            <a href="" class="me-3"> <i class="fa-brands fa-instagram" style="color: #000000;"></i> </a> 
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous">
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var video = document.getElementById('video');
-            video.pause();
-        });
-    </script> <!-- Este script es util para pausar el video apenas carga la pagina, dado que no encontramos otra forma -->
-
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
