@@ -17,25 +17,28 @@
         
         body {
             background-image: url('images/about1.jpg');
-            background-size: cover;
+            background-size: cover; /*que cubra todo el body*/
             background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            overflow-x: hidden; /*para evitar desborda horizontal*/
         }
 
         .icons a{
             font-size: 1.5rem;
+            text-decoration: none; 
+            border: none; /*esto es para eliminar bordes que tenga el link*/
         }
 
         .logo {
             width: 60px;
             position: absolute;
-            top: -10px;
+            top: -10px; /*tuvimos que colocarlo manualmente por problemas con la img original*/
         }
 
         .contenido{
-            flex: 1;
+            flex: 1; /*para enviar el footer al fondo de pagina*/
             padding-bottom: 50vh;
         }
         

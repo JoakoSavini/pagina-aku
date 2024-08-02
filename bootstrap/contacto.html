@@ -21,8 +21,12 @@
             flex-direction: column;
         }
 
+        
+
         .icons a {
             font-size: 1.5rem;
+            text-decoration: none; 
+            border: none; /*esto es para eliminar bordes que tenga el link*/
         }
 
         .contenido {
@@ -35,13 +39,13 @@
         }
 
         .relleno {
-            flex: 1;
+            flex: 1; /*para enviar el footer al fondo de pagina*/
         }
 
         .logo {
             width: 60px;
             position: absolute;
-            top: -10px;
+            top: -10px; /*tuvimos que colocarlo manualmente por problemas con la img original*/
         }
 
         p{
@@ -58,7 +62,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="index.html"><img class="img-fluid logo" src="images/logos/Photo by Aguzer0 white.png" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img class="img-fluid logo" src="images/logos/Photo by Aguzer0 black.png" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -67,13 +71,13 @@
             <div class="d-flex justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="about_me.html">Acerca de Mi</a>
+                        <a class="nav-link text-black" href="about_me.html">Acerca de Mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="servicios.html"> Fotos y Videos </a>
+                        <a class="nav-link text-black" href="servicios.html"> Fotos y Videos </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#"> Contacto </a>
+                        <a class="nav-link text-black" href="#"> Contacto </a>
                     </li>
                 </ul>
             </div>
