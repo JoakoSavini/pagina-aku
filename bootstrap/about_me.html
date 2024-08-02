@@ -12,19 +12,20 @@
     <style>
         html, body {
             height: 100%;
+            margin: 0;
         }
         
         body {
+            background-image: url('images/about1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
         }
 
         .icons a{
             font-size: 1.5rem;
-        }
-
-        .img-aboutme {
-            border-radius: 2px;
         }
 
         .logo {
@@ -33,14 +34,43 @@
             top: -10px;
         }
 
-        p{
-            font-family:'Amatic' ;
+        .contenido{
+            flex: 1;
+            padding-bottom: 50vh;
+        }
+        
+        h1{
+            font-family: 'Amatic';
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h3{
+            font-family:'Titillium Web' ;
             font-size: 1.5rem;
+            margin-bottom: 0.5rem;
         }
 
-        .txt{
+        p{
             font-family:'Titillium Web' ;
+            margin-bottom: 0.5rem;
         }
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .vertical-spacer {
+            height: 30vh; /* Ajusta este valor según necesites */
+        }
+
+        .second-text {
+            width: 25%; /* Aumenta el ancho del texto */
+            margin-left: auto; /* Empuja el texto hacia la derecha */
+            padding-right: 2vw; /* 0.5% del ancho de la ventana */
+            margin-right: 2vw; /* 0.3% del ancho de la ventana */
+        }
+
 
     </style>
 </head>
@@ -71,49 +101,57 @@
     </nav>
 
     <div class="contenido">
-        <div class="contenedor-titulo d-flex justify-content-center mb-3">
-            <p>Bienvenido a mi portafolio de cine y fotografía, 
-                donde el arte se encuentra con la pasión, 
-                y cada cuadro cuenta una historia.</p>
+        <div class="contenedor-titulo d-flex flex-column justify-content-center mb-3">
+
+            <div class="text-center">
+                <h1>Hola!</h1>
+            </div>
+
+            <h3 class="text-center"> Soy Augusto... </h3>
+
+            <div class="row justify-content-center">
+                
+                <div class="col-12 col-md-4 text-center">
+                    <p class="text-justify">Fotógrafo y filmmaker, preparado para nuevos desafíos. 
+                        Amo viajar y llevar conmigo mi camara & dron para guardar lo mas lindo de cada lugar.
+                        Intento combinar una realización cinematográfica dinámica con un gran poder visual, logrando que cada trabajo hable por si solo.
+                        Me apasiona experimentar diversos proyectos y que las personas puedan sentir lo mismo que yo sentí durante su creación.
+                        Más que una profesión, es una forma de vida, de conectar con el mundo.
+                        Unite a mí en este viaje y hagamos algo extraordinario juntos.
+                    </p>
+                </div>
+                <div class="col-12 col-md-7 text-center"></div> <!-- Columna vacía para centrar --></div>
+                <div class="col-12 col-md-1"></div> <!-- Columna vacía para centrar -->
+            </div>
+
+            <div class="vertical-spacer"></div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-9"></div> <!-- Columna vacía para centrar -->
+                <div class="col-12 col-md-2 text-center second-text">
+                    <p class="text-justify">Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S
+                        y un conjunto de herramientas de edición como Premiere Pro, After Effects, Lightroom 
+                        y Photoshop, supero los límites de la creatividad, incluso experimentando con contenido IA.
+                    </p>
+                </div>
+            </div>
+
+            <div class="vertical-spacer"></div>
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-4 text-center">
+                    <p class="text-justify">Influenciado por Peter McKinnon, Sam Kolder, Ben Brown,
+                        y Matti Haapoja, me esfuerzo por evocar emociones a través de mi arte. 
+                        Con mi trabajo intento que cada imagen se cuente con pasión y cuente una historia.
+
+                    </p>
+                </div>
+                <div class="col-12 col-md-7"></div> <!-- Columna vacía para centrar -->
+            </div>
+        </div>
         </div>
 
-        <div class="primer-contenedor row mb-5">
-            <div class="col"><img class="img-fluid img-aboutme" src="images/am-1.jpg" alt=""></div>
-            <div class="col d-flex align-items-center txt">Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S, etc, 
-                y un conjunto de herramientas de edición que incluyen Premiere Pro, After Effects, 
-                Lightroom y Photoshop, amplío los límites de la creatividad, 
-                incluso experimentando con la generación de contenido de IA.</div>
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
-
-        <div class="segundo-contenedor row mb-5">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col d-flex align-items-center txt"> Influenciado por las obras de Peter McKinnon, Sam Kolder, 
-                Ben Brown y Matti Haapoja, 
-                Me esfuerzo por evocar emociones y aprender a través de mi arte.
-                Me apasiona experimentar diversos proyectos y mostrarlos a través del 
-                video y la fotografía, 
-                haciendo que las personas sientan lo que sentí durante el proceso de creación.</div>
-            <div class="col"><img class="img-fluid img-aboutme" src="images/am-6.jpg" alt=""></div>
-        </div>
-
-        <div class="tercer-contenedor row mb-5">
-            <div class="col"><img class="img-fluid img-aboutme" src="images/am-10.jpg" alt=""></div>
-            <div class="col d-flex align-items-center txt"> El cine es más que una profesión para mí; 
-                es una forma de vida, una forma de conectar y compartir mi corazón con el mundo.
-                Siempre estoy listo para embarcarme en cualquier trabajo, 
-                en cualquier parte del mundo,llevando mi amor por el cine y 
-                la fotografía a nuevas alturas.
-                Únete a mí en este viaje creativo, y hagamos algo extraordinario juntos.</div>
-            <div class="col"></div>
-            <div class="col"></div>
-        </div>
-
-    </div>
-
-    <footer class="bg-dark d-flex justify-content-center bg-transparent">
+    <footer class="bg-dark d-flex justify-content-end bg-transparent">
         <div class="icons">
             <a href="" class="me-3"> <i class="fa-brands fa-whatsapp" style="color: #000000;"></i> </a>
             <a href="" class="me-3"> <i class="fa-brands fa-tiktok" style="color: #000000;"></i></i> </a>
