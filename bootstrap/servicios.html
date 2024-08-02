@@ -60,8 +60,6 @@
 
         a {
             font-family: 'Titillium Web';
-            color: black;
-            text-decoration: none;
         }
 
         div {
@@ -69,7 +67,7 @@
         }
 
         h2{
-            font-family: 'Caveat';
+            font-family: 'Amatic';
             font-size: 3rem;
         }
 
@@ -111,21 +109,21 @@
                     <img src="images/servicios/producto-modelo/p1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Destaca tus productos con fotografías profesionales que capturan cada detalle. Nuestra experiencia en iluminación y composición asegura que tus productos se vean irresistibles y atractivos para tus clientes.</p>
+                        <p class="card-text">Destaca tus productos con fotografías profesionales que capturan cada detalle. Una correcta iluminación y composición asegura que tus productos se vean irresistibles y atractivos para tus clientes.</p>
                     </div>
                 </div>
                 <div class="card mx-2" style="width: 18rem;">
                     <img src="images/servicios/producto-modelo/p2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Potencia tus campañas de marketing con imágenes impactantes y de alta calidad. Trabajamos contigo para crear fotografías publicitarias que cuentan la historia de tu marca y conectan con tu audiencia.</p>
+                        <p class="card-text">Potencia tus campañas de marketing con imágenes impactantes y de alta calidad. Trabajo contigo para crear fotografías publicitarias que cuentan la historia de tu marca y conectan con tu audiencia.</p>
                     </div>
                 </div>
                 <div class="card mx-2" style="width: 18rem;">
                     <img src="images/servicios/producto-modelo/p3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Aumenta tus ventas en línea con fotografías de productos que reflejan su verdadera calidad y características. Ofrecemos imágenes nítidas y claras que ayudan a tus clientes a tomar decisiones informadas.</p>
+                        <p class="card-text">Aumentá tus ventas en línea con fotografías de productos que reflejan su verdadera calidad y características. Obtené imágenes nítidas y claras que ayudan a tus clientes a tomar decisiones informadas.</p>
                     </div>
                 </div>
             </div>
@@ -155,7 +153,7 @@
                     <img src="images/servicios/modelo/m5.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Captura la esencia de tu personalidad con retratos artísticos. Nuestro enfoque creativo y profesional realzará tu belleza natural, creando imágenes atemporales que podrás atesorar para siempre.</p>
+                        <p class="card-text">Captura la esencia de tu personalidad con retratos artísticos. Mi enfoque creativo y profesional realzará tu belleza natural, creando imágenes que podrás atesorar para siempre.</p>
                     </div>
                 </div>
             </div>
@@ -171,7 +169,7 @@
                     <img src="images/servicios/dron/d8.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Obtén una nueva perspectiva con fotografías aéreas. Utilizo un dron para capturar imágenes impresionantes de paisajes, eventos y propiedades desde ángulos únicos.</p>
+                        <p class="card-text">Obtené una nueva perspectiva con fotografías aéreas. Utilizo un dron para capturar imágenes impresionantes de paisajes, eventos y propiedades desde ángulos únicos.</p>
                     </div>
                 </div>
                 <div class="card mx-2" style="width: 18rem;">
@@ -206,7 +204,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video 1</h5>
-                        <p class="card-text">Eleva tu presencia en redes sociales con videos dinámicos y atractivos. Ya sea para promocionar productos, compartir historias o interactuar con tu audiencia, mis videos están diseñados para captar la atención y aumentar tu alcance.</p>
+                        <p class="card-text">Elevá tu presencia en redes sociales con videos dinámicos y atractivos. Ya sea para promocionar productos, compartir historias o interactuar con tu audiencia, mis videos están diseñados para captar la atención y aumentar tu alcance.</p>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -217,7 +215,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video 2</h5>
-                        <p class="card-text">Comunica la misión y los logros de tu organización con videos institucionales impactantes. Mis videos ayudan a narrar tu historia, destacar tus iniciativas y conectar con tu audiencia de manera efectiva.</p>
+                        <p class="card-text">Comunicá la misión y los logros de tu organización con videos institucionales impactantes. Mis videos ayudan a narrar tu historia, destacar tus iniciativas y conectar con tu audiencia de manera efectiva.</p>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
@@ -228,7 +226,7 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Video 3</h5>
-                        <p class="card-text">Destaca tu música con videos creativos y de alta calidad. Trabajo contigo para transformar tus ideas en visuales impactantes que complementan tu estilo y narrativa musical, ayudando a captar la atención y potenciar el alcance de tu música.</p>
+                        <p class="card-text">Destacá tu música con videos creativos y de alta calidad. Trabajo contigo para transformar tus ideas en visuales impactantes que complementan tu estilo y narrativa musical, ayudando a captar la atención y potenciar el alcance de tu música.</p>
                     </div>
                 </div>
             </div>
@@ -254,10 +252,15 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            var video = document.getElementById('video');
-            video.pause();
+            var iframes = document.querySelectorAll('iframe');
+            iframes.forEach(function(iframe) {
+                var src = iframe.src;
+                iframe.src = ''; // Limpia el src para detener la reproducción
+                iframe.src = src; // Vuelve a establecer el src para cargar el video
+            });
         });
-    </script> <!-- Este script es util para pausar el video apenas carga la pagina, dado que no encontramos otra forma -->
+    </script>
+    
 
 </body>
 
