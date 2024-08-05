@@ -1,0 +1,13 @@
+@font-face{
+    font-family: 'Titillium Web';
+    src: url('/materialize/fonts/Titillium_Web/TitilliumWeb-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'Amatic';
+    src: url('/materialize/fonts/Amatic_SC/AmaticSC-Regular.ttf') format(truetype);
+    font-weight: normal;
+    font-style: normal;
+}
