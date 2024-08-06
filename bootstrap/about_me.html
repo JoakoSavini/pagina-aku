@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
-
 <head>
+    <!-- ... (tus metadatos y enlaces a CSS) ... -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap index</title>
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <style>
+        /* Tus estilos originales aquí */
         html, body {
             height: 100%;
             margin: 0;
@@ -74,97 +75,172 @@
             margin-right: 2vw; /* 0.3% del ancho de la ventana */
         }
 
-
+        /* Estilos específicos para móvil */
+        @media (max-width: 767.98px) {
+            body {
+                background-image: none;
+            }
+            /* Otros estilos específicos para móvil */
+            .icons a {
+                font-size: 1.2rem;
+            }
+            footer {
+                padding: 5px;
+            }
+            .navbar-toggler {
+                display: block;
+                margin-left: auto;
+            }
+            .navbar-collapse {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: black;
+                padding: 10px;
+                border-radius: 0 0 5px 5px;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            .logo {
+                width: 40px;
+            }
+        }
     </style>
 </head>
-
 <body>
+    <!-- Navbar (puede permanecer igual, Bootstrap lo hará responsive) -->
     <nav class="navbar navbar-expand-lg bg-black">
         <div class="container-fluid">
-            <a class="navbar-brand text-white" href="index.html"><img class="img-fluid logo" src="images/logos/Photo by Aguzer0 white.png" alt=""></a>
+            <a class="navbar-brand text-white" href="index.html">
+                <img class="img-fluid logo" src="images/logos/Photo by Aguzer0 white.png" alt="">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="d-flex justify-content-end" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="#">Acerca de Mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="servicios.html"> Fotos y Videos </a>
+                        <a class="nav-link text-white" href="servicios.html">Fotos y Videos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="contacto.html"> Contacto </a>
+                        <a class="nav-link text-white" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="contenido">
-        <div class="contenedor-titulo d-flex flex-column justify-content-center mb-3">
-
-            <div class="text-center">
-                <h1>¡Hola!</h1>
+    <!-- Contenido para Desktop -->
+    <div class="d-none d-md-block">
+        <!-- Tu contenido original aquí -->
+        <div class="contenido">
+            <div class="contenedor-titulo d-flex flex-column justify-content-center mb-3">
+                <div class="text-center">
+                    <h1>¡Hola!</h1>
+                </div>
+    
+                <h3 class="text-center"> Soy Augusto... </h3>
+    
+                <div class="row justify-content-center">
+                    
+                    <div class="col-12 col-md-4 text-center">
+                        <p class="text-justify">Fotógrafo y filmmaker, preparado para nuevos desafíos. 
+                            Amo viajar y llevar conmigo mi camara & dron para guardar lo mas lindo de cada lugar.
+                            Intento combinar una realización cinematográfica dinámica con un gran poder visual, logrando que cada trabajo hable por si solo.
+                            Me apasiona experimentar diversos proyectos y que las personas puedan sentir lo mismo que yo sentí durante su creación.
+                            Más que una profesión, es una forma de vida, de conectar con el mundo.
+                            Unite a mí en este viaje y hagamos algo extraordinario juntos.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-7 text-center"></div> <!-- Columna vacía para centrar --></div>
+                    <div class="col-12 col-md-1"></div> <!-- Columna vacía para centrar -->
+                </div>
+    
+                <div class="vertical-spacer"></div>
+    
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-9"></div> <!-- Columna vacía para centrar -->
+                    <div class="col-12 col-md-2 text-center second-text">
+                        <p class="text-justify">Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S
+                            y un conjunto de herramientas de edición como Premiere Pro, After Effects, Lightroom 
+                            y Photoshop, supero los límites de la creatividad, incluso experimentando con contenido IA.
+                        </p>
+                    </div>
+                </div>
+    
+                <div class="vertical-spacer"></div>
+    
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-4 text-center">
+                        <p class="text-justify">Influenciado por Peter McKinnon, Sam Kolder, Ben Brown,
+                            y Matti Haapoja, me esfuerzo por evocar emociones a través de mi arte. 
+                            Con mi trabajo intento que cada imagen se cuente con pasión y narre una historia.
+    
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-7"></div> <!-- Columna vacía para centrar -->
+                </div>
             </div>
+        </div>
+    </div>
 
-            <h3 class="text-center"> Soy Augusto... </h3>
-
+    <!-- Contenido para Móvil -->
+    <div class="d-md-none">
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="display-4">¡Hola!</h1>
+                    <h3 class="mb-4">Soy Augusto...</h3>
+                </div>
+            </div>
+            
             <div class="row justify-content-center">
-                
-                <div class="col-12 col-md-4 text-center">
-                    <p class="text-justify">Fotógrafo y filmmaker, preparado para nuevos desafíos. 
+                <div class="col-12 text-center">
+                    <p class="mb-4">
+                        Fotógrafo y filmmaker, preparado para nuevos desafíos. 
                         Amo viajar y llevar conmigo mi camara & dron para guardar lo mas lindo de cada lugar.
-                        Intento combinar una realización cinematográfica dinámica con un gran poder visual, logrando que cada trabajo hable por si solo.
-                        Me apasiona experimentar diversos proyectos y que las personas puedan sentir lo mismo que yo sentí durante su creación.
-                        Más que una profesión, es una forma de vida, de conectar con el mundo.
-                        Unite a mí en este viaje y hagamos algo extraordinario juntos.
+                        <!-- ... (texto breve) ... -->
                     </p>
                 </div>
-                <div class="col-12 col-md-7 text-center"></div> <!-- Columna vacía para centrar --></div>
-                <div class="col-12 col-md-1"></div> <!-- Columna vacía para centrar -->
             </div>
 
-            <div class="vertical-spacer"></div>
+            <div class="row">
+                <div class="col-12">
+                    <img src="images/about1.jpg" class="img-fluid mb-4" alt="About image">
+                </div>
+            </div>
 
             <div class="row justify-content-center">
-                <div class="col-12 col-md-9"></div> <!-- Columna vacía para centrar -->
-                <div class="col-12 col-md-2 text-center second-text">
-                    <p class="text-justify">Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S
+                <div class="col-12 text-center">
+                    <p>
+                        Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S
                         y un conjunto de herramientas de edición como Premiere Pro, After Effects, Lightroom 
                         y Photoshop, supero los límites de la creatividad, incluso experimentando con contenido IA.
                     </p>
                 </div>
             </div>
-
-            <div class="vertical-spacer"></div>
-
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-4 text-center">
-                    <p class="text-justify">Influenciado por Peter McKinnon, Sam Kolder, Ben Brown,
-                        y Matti Haapoja, me esfuerzo por evocar emociones a través de mi arte. 
-                        Con mi trabajo intento que cada imagen se cuente con pasión y narre una historia.
-
-                    </p>
-                </div>
-                <div class="col-12 col-md-7"></div> <!-- Columna vacía para centrar -->
-            </div>
         </div>
-        </div>
+    </div>
 
+    <!-- Footer (puede permanecer igual) -->
     <footer class="bg-dark d-flex justify-content-end bg-transparent">
-        <div class="icons">
-            <a href="https://x.com/aguzero" class="me-3"> <i class="fa-brands fa-x-twitter" style="color: #000000;"></i> </a>
+        <a href="https://x.com/aguzero" class="me-3"> <i class="fa-brands fa-x-twitter" style="color: #000000;"></i> </a>
             <a href="https://www.tiktok.com/@aguzer0" class="me-3"> <i class="fa-brands fa-tiktok" style="color: #000000;"></i></i> </a>
             <a href="https://www.instagram.com/aguzero/" class="me-3"> <i class="fa-brands fa-instagram" style="color: #000000;"></i> </a>
-        </div>
     </footer>
 
+    <!-- ... (tus scripts) ... -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
-
 </html>
