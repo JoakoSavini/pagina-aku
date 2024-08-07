@@ -70,6 +70,29 @@
             .form-floating {
                 margin-bottom: 15px;
             }
+
+            .navbar-toggler {
+                display: block;
+                margin-left: auto;
+            }
+            .navbar-collapse {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: rgb(255, 255, 255, 0.8);
+                padding: 10px;
+                border-radius: 0 0 5px 5px;
+                backdrop-filter: blur(2px);
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            .logo {
+                width: 60px;
+            }
         }
     </style>
 </head>
@@ -77,22 +100,24 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-transparent">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="img-fluid logo" src="images/logos/Photo by Aguzer0 black.png" alt=""></a>
+            <a class="navbar-brand text-white" href="index.html">
+                <img class="img-fluid logo" src="images/logos/Photo by Aguzer0 black.png" alt="">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="about_me.html">Acerca de Mi</a>
+                        <a class="nav-link text-black" href="#">Acerca de Mi</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="servicios.html"> Fotos y Videos </a>
+                        <a class="nav-link text-black" href="servicios.html">Fotos y Videos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="#"> Contacto </a>
+                        <a class="nav-link text-black" href="contacto.html">Contacto</a>
                     </li>
                 </ul>
             </div>
