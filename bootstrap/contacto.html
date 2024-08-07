@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background-image: url("images/f.jpeg");
+            display: flex;
+            flex-direction: column;
+        }
+
+        .icons a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            border: none;
+        }
+
+        .contenido {
+            flex: 1;
+            backdrop-filter: blur(2px);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            background-color: rgb(255, 255, 255, 0.8);
+        }
+
+        .relleno {
+            flex: 1;
+        }
+
+        .logo {
+            width: 60px;
+            position: absolute;
+            top: -10px;
+        }
+
+        p, div {
+            font-family: 'Titillium Web';
+        }
+
+        @media (max-width: 768px) {
+            .contenido {
+                width: 90% !important;
+                margin: 20px auto;
+            }
+
+            .checkbox-row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .checkbox-col {
+                flex: 0 0 50%;
+                max-width: 50%;
+                margin-bottom: 10px;
+            }
+
+            .form-floating {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="img-fluid logo" src="images/logos/Photo by Aguzer0 black.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="about_me.html">Acerca de Mi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="servicios.html"> Fotos y Videos </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#"> Contacto </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="relleno"></div>
+
+    <div class="contenido col-lg-6 col-md-8 col-sm-10 align-self-center">
+        <h3 class="d-flex justify-content-center d-none d-md-flex">Formulario de Solicitud</h3>
+        <h3 class="d-flex justify-content-center d-md-none">Formulario</h3>
+
+        <form id="datos_form" class="d-flex justify-content-center">
+            <div class="contenedor_inputs w-100">
+                <div class="row checkbox-row">
+                    <div class="col-6 checkbox-col">    
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="producto" value="producto">
+                            <label class="form-check-label" for="producto">
+                                Producto
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 checkbox-col">    
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="modelo" value="modelo">
+                            <label class="form-check-label" for="modelo">
+                                Modelo
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 checkbox-col">
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="video" value="video">
+                            <label class="form-check-label" for="video">
+                                Video 
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-6 checkbox-col">    
+                        <div class="form-check me-3">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="dron" value="dron">
+                            <label class="form-check-label" for="dron">
+                                Dron
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    <label for="nombre">Nombre *</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                    <label for="apellido">Apellido *</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <label for="email">Email *</label>
+                </div>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" placeholder="Mensaje" id="mensaje" style="height: 100px"></textarea>
+                    <label for="mensaje">Mensaje</label>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-outline-success">Enviar</button>
+                </div>
+            </div>
+        </form>
+    </div> 
+
+    <div class="relleno"></div>
+
+    <footer class="bg-dark d-flex justify-content-center bg-transparent">
+        <div class="icons">
+            <a href="https://x.com/aguzero" class="me-3"> <i class="fa-brands fa-x-twitter" style="color: #000000;"></i> </a>
+            <a href="https://www.tiktok.com/@aguzer0" class="me-3"> <i class="fa-brands fa-tiktok" style="color: #000000;"></i></i> </a>
+            <a href="https://www.instagram.com/aguzero/" class="me-3"> <i class="fa-brands fa-instagram" style="color: #000000;"></i> </a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+    </script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
