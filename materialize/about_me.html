@@ -25,6 +25,13 @@
             min-width: 100vw;
         }
 
+        .foot-image-contenedor {
+            display: flex;
+            justify-content: end;
+            gap: 20px;
+            backdrop-filter: blur(1px);
+        }
+
         .icons a {
             font-size: 1.5rem;
             text-decoration: none;
@@ -75,13 +82,6 @@
             margin-right: 2vw; /* 0.3% del ancho de la ventana */
         }
 
-        @media (max-width: 768px) {
-            .second-text {
-                width: 100%;
-                padding-right: 0;
-                margin-right: 0;
-            }
-        }
     </style>
 </head>
 
@@ -99,21 +99,21 @@
     </nav>
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Acerca de Mi</a></li>
+        <li><a href="about_me.html">Acerca de Mi</a></li>
         <li><a href="servicios.html">Fotos y Videos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
     </ul>
 
     <div class="contenido">
-        <div class="container center-align">
+        <div class="center-align">
             <div class="row">
                 <div class="col s12 m12 l12">
                     <h1>¡Hola!</h1>
                 </div>
-                <div class="col s12 m12 l12">
+                <div class="col s12 ">
                     <h3>Soy Augusto...</h3>
                 </div>
-                <div class="col s6 m6 l4">
+                <div class="col m4">
                     <p class="text-justify">Fotógrafo y filmmaker, preparado para nuevos desafíos. 
                         Amo viajar y llevar conmigo mi cámara & dron para guardar lo más lindo de cada lugar.
                         Intento combinar una realización cinematográfica dinámica con un gran poder visual, logrando que cada trabajo hable por sí solo.
@@ -122,15 +122,15 @@
                         Únete a mí en este viaje y hagamos algo extraordinario juntos.
                     </p>
                 </div>
-                <div class="col s12 m7 l4 offset-m1"></div> <!-- Columna vacía para centrar -->
+                <div class="col m8"></div> <!-- Columna vacía para centrar -->
             </div>
 
             <div class="vertical-spacer"></div>
 
-            <div class="row s12 m6 l6">
-                <div class="col s12 m6 l8"></div> <!-- Columna vacía para centrar -->
+            <div class="row">
+                <div class="col m9"></div> <!-- Columna vacía para centrar -->
 
-                <div class="col s12 m6 l3 second-text">
+                <div class="col m2 second-text">
                     <p class="text-justify">Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S
                         y un conjunto de herramientas de edición como Premiere Pro, After Effects, Lightroom 
                         y Photoshop, supero los límites de la creatividad, incluso experimentando con contenido IA.
@@ -141,24 +141,22 @@
             <div class="vertical-spacer"></div>
 
             <div class="row">
-                <div class="col s1 m4">
+                <div class="col m4">
                     <p class="text-justify">Influenciado por Peter McKinnon, Sam Kolder, Ben Brown,
                         y Matti Haapoja, me esfuerzo por evocar emociones a través de mi arte. 
                         Con mi trabajo intento que cada imagen se cuente con pasión y narre una historia.
                     </p>
                 </div>
-                <div class="col s12 m7 offset-m1"></div> <!-- Columna vacía para centrar -->
+                <div class="col m7"></div> <!-- Columna vacía para centrar -->
             </div>
         </div>
     </div>
 
-    <footer class="black">
-        <div class="space-between">
-            <div class="icons right">
-                <a href="" class="white-text"><i class="fa-brands fa-whatsapp"></i></a>
-                <a href="" class="white-text"><i class="fa-brands fa-tiktok"></i></a>
-                <a href="" class="white-text"><i class="fa-brands fa-instagram"></i></a>
-            </div>
+    <footer class="page-footer transparent">
+        <div class="row foot-image-contenedor">
+            <a href=""> <i class="fa-brands fa-whatsapp" style="color: #000000;"></i> </a>
+            <a href=""> <i class="fa-brands fa-tiktok" style="color: #000000;"></i></i> </a>
+            <a href=""> <i class="fa-brands fa-instagram" style="color: #000000;"></i> </a> 
         </div>
     </footer>
 
