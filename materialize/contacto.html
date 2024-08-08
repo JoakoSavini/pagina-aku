@@ -7,11 +7,15 @@
     <title>Formulario con Desenfoque</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
 
     <style>
         /* Estilos para el fondo */
         body {
             background-image: url('/materialize/images/f.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .contenedor {
@@ -60,6 +64,13 @@
             z-index: -1;
             /* Coloca el fondo desenfocado detrás del contenido */
         }
+
+        .logo {
+            width: 60px;
+            position: absolute;
+            top: -10px; /* tuvimos que colocarlo manualmente por problemas con la img original */
+        }
+
 
         /* Estilos para los inputs */
         .contenedor-form .input-field {
@@ -121,13 +132,13 @@
     <div class="navbar">
         <nav class="nav-wrapper z-depth-0 transparent">
             <div class="space-nav">
-                <a href="index_final.html" class="brand-logo white-text text-darken-4">Aku</a>
+                <a href="index_final.html" class="brand-logo"><img class="logo" src="images/logos/Photo by Aguzer0 black.png" alt=""></a>
                 <a href="#" data-target="menu-mobile" class="sidenav-trigger"><i
                         class="material-icons white-text text-darken2">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a class="white-text text-darken2" href="about_me.html">Sobre Mi</a></li>
-                    <li><a class="white-text text-darken2" href="#">Portafolio</a></li>
-                    <li><a class="white-text text-darken2" href="contacto.html">Contacto</a></li>
+                    <li><a class="black-text text-darken2" href="about_me.html">Sobre Mi</a></li>
+                    <li><a class="black-text text-darken2" href="#">Portafolio</a></li>
+                    <li><a class="black-text text-darken2" href="contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </nav>
@@ -136,7 +147,7 @@
     <div class="contenedor">
         <div class="contenedor-form">
             <h4 class="center-align">Servicio a contratar</h4>
-            <form class="col s12" id="datos_form">
+            <form class="col s12 " id="datos_form">
                 <div class="row checkbox-container">
                     <label class="checkbox-item">
                         <input type="radio" name="check" />
@@ -163,7 +174,7 @@
                 </div>
                 <div class="input-field">
                     <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
+                    <label for="email">Email *</label>
                 </div>
                 <div class="input-field">
                     <textarea id="message" class="materialize-textarea"></textarea>
@@ -178,11 +189,13 @@
         </div>
     </div>
 
-    <footer class="page-footer transparent">
-        <div class="row foot-image-contenedor">
-            <div><img class="images" src="/materialize/images/whatsapp.svg" alt=""></div>
-            <div><img class="images" src="/materialize/images/tiktok.svg" alt=""></div>
-            <div><img class="images" src="/materialize/images/ig.svg" alt=""></div>
+    <footer class="black">
+        <div class="space-between">
+            <div class="icons right">
+                <a href="" class="white-text"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="" class="white-text"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="" class="white-text"><i class="fa-brands fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
 
