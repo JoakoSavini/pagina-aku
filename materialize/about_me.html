@@ -1,112 +1,166 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coco</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Materialize index</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <style>
-        /* Estilos para el fondo */
-
-        body {
-            background-color: white;
-            position: relative;
-            min-height: 100vh;
-            /* Asegura que el body tenga una altura mínima del 100% del viewport */
+        html, body {
+            height: 100%;
+            margin: 0;
         }
 
-        .space-nav {
-            padding: 0 20px;
+        body {
+            background-image:  url('images/about1.jpg');
+            background-size: cover; /* que cubra todo el body */
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            overflow-x: hidden; /* para evitar desbordamiento horizontal */
+            min-width: 100vw;
         }
 
         .foot-image-contenedor {
             display: flex;
-            justify-content: center;
+            justify-content: end;
             gap: 20px;
             backdrop-filter: blur(1px);
-            width: 20%;
         }
 
-        footer {
-            bottom: 0;
-            width: 100%;
-            /* El footer ocupa todo el ancho del body */
+        .icons a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            border: none; /* esto es para eliminar bordes que tenga el link */
         }
 
-        .images {
-            height: 35px;
-        }
-        .image-about{
-            width: 100%;
+        .logo {
+            width: 60px;
+            position: absolute;
+            top: -10px; /* tuvimos que colocarlo manualmente por problemas con la img original */
         }
 
-        .full-height {
-            height: 100vh;
+        .contenido {
+            flex: 1; /* para enviar el footer al fondo de página */
+            padding-bottom: 50vh;
         }
-        .image-container {
-            padding: 0 !important;
-            overflow: hidden;
+
+        h1{
+            font-family: 'Amatic';
+            font-size: 4rem;
+            margin-bottom: 0.5rem;
         }
-        .full-height-img {
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
+
+        h3 {
+            
+            font-family: 'Amatic';
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
         }
-        .text-container {
-            padding: 20px;
-            overflow-y: auto;
+
+        p {
+            font-family: 'Titillium Web';
+            margin-bottom: 0.5rem;
         }
-    
+
+        .text-justify {
+            text-align: justify;
+        }
+
+        .vertical-spacer {
+            height: 30vh; /* Ajusta este valor según necesites */
+        }
+
+        .second-text {
+            width: 25%; /* Aumenta el ancho del texto */
+            margin-left: auto; /* Empuja el texto hacia la derecha */
+            padding-right: 2vw; /* 0.5% del ancho de la ventana */
+            margin-right: 2vw; /* 0.3% del ancho de la ventana */
+        }
+
     </style>
 </head>
 
 <body>
+    <nav class="black">
+        <div class="nav-wrapper">
+            <a href="index_final.html" class="brand-logo"><img class="logo" src="images/logos/Photo by Aguzer0 white.png" alt=""></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="about_me.html">Acerca de Mi</a></li>
+                <li><a href="servicios.html">Fotos y Videos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    <div>
-        <nav class="nav-wrapper z-depth-0 transparent">
-            <div class="space-nav">
-                <a href="index_final.html" class="brand-logo black-text text-darken-4">Aku</a>
-                <a href="#" data-target="menu-mobile" class="sidenav-trigger"><i
-                        class="material-icons white-text text-darken2">menu</i></a>
-                <ul class="right hide-on-med-and-down">
-                    <li><a class="black-text text-darken2" href="/materialize/about_me.html">Sobre Mi</a></li>
-                    <li><a class="black-text text-darken2" href="/">Portafolio</a></li>
-                    <li><a class="black-text text-darken2" href="/materialize/contacto.html">Contacto</a></li>
-                </ul>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="about_me.html">Acerca de Mi</a></li>
+        <li><a href="servicios.html">Fotos y Videos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <div class="contenido">
+        <div class="center-align">
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <h1>¡Hola!</h1>
+                </div>
+                <div class="col s12 ">
+                    <h3>Soy Augusto...</h3>
+                </div>
+                <div class="col m4">
+                    <p class="text-justify">Fotógrafo y filmmaker, preparado para nuevos desafíos. 
+                        Amo viajar y llevar conmigo mi cámara & dron para guardar lo más lindo de cada lugar.
+                        Intento combinar una realización cinematográfica dinámica con un gran poder visual, logrando que cada trabajo hable por sí solo.
+                        Me apasiona experimentar diversos proyectos y que las personas puedan sentir lo mismo que yo sentí durante su creación.
+                        Más que una profesión, es una forma de vida, de conectar con el mundo.
+                        Únete a mí en este viaje y hagamos algo extraordinario juntos.
+                    </p>
+                </div>
+                <div class="col m8"></div> <!-- Columna vacía para centrar -->
             </div>
-        </nav>
+
+            <div class="vertical-spacer"></div>
+
+            <div class="row">
+                <div class="col m9"></div> <!-- Columna vacía para centrar -->
+
+                <div class="col m2 second-text">
+                    <p class="text-justify">Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S
+                        y un conjunto de herramientas de edición como Premiere Pro, After Effects, Lightroom 
+                        y Photoshop, supero los límites de la creatividad, incluso experimentando con contenido IA.
+                    </p>
+                </div>
+            </div>
+
+            <div class="vertical-spacer"></div>
+
+            <div class="row">
+                <div class="col m4">
+                    <p class="text-justify">Influenciado por Peter McKinnon, Sam Kolder, Ben Brown,
+                        y Matti Haapoja, me esfuerzo por evocar emociones a través de mi arte. 
+                        Con mi trabajo intento que cada imagen se cuente con pasión y narre una historia.
+                    </p>
+                </div>
+                <div class="col m7"></div> <!-- Columna vacía para centrar -->
+            </div>
+        </div>
     </div>
 
-    <div class="row full-height">
-        <div class="col s12 m6 full-height image-container"><img src="/materialize/images/aku.jpeg" class="image-about" alt=""></div>
-        <div class="col s12 m6 full-height text-container"><p class="txt">Bienvenido a mi portafolio de cine y fotografía, donde el arte se encuentra con la pasión, y cada cuadro cuenta una historia. 
-            Inspirado por la necesidad de expresarme, he cultivado un estilo cinematográfico que combina el cine dinámico y agresivo con el poder de la narración visual. 
-            Especialización en narración de cuentos, fotografía de productos y videos musicales, Mi objetivo es crear un trabajo que hable por sí mismo.
-            Mi amor por las tomas cinematográficas es evidente en cada proyecto, capturando momentos que resuenan profundamente con los espectadores.
-            Uno de mis proyectos notables, "Late Gym Sessions", muestra mi capacidad para combinar la narrativa y el arte visual sin problemas.
-            Prospero en la exploración de nuevas áreas y siempre estoy abierto a traer clientes' visiones a la vida, añadiendo mi toque único a cada proyecto. 
-            Mi enfoque de la narración de historias implica comprender al cliente's deseos tácitos y el uso de referencias para crear una historia que cautiva tanto a la audiencia como al cliente.
-            Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S, etc, y un conjunto de herramientas de edición que incluyen Premiere Pro, After Effects, Lightroom y Photoshop, amplío los límites de la creatividad, incluso experimentando con la generación de contenido de IA.
-            Influenciado por las obras de Peter McKinnon, Sam Kolder, Ben Brown y Matti Haapoja, Me esfuerzo por evocar emociones y aprender a través de mi arte.
-            Me apasiona experimentar diversos proyectos y mostrarlos a través del video y la fotografía, haciendo que las personas sientan lo que sentí durante el proceso de creación.
-            El cine es más que una profesión para mí; es una forma de vida, una forma de conectar y compartir mi corazón con el mundo.Siempre estoy listo para embarcarme en cualquier trabajo, en cualquier parte del mundo,llevando mi amor por el cine y la fotografía a nuevas alturas.
-            Únete a mí en este viaje creativo, y hagamos algo extraordinario juntos. Augusto
-
-        </p></div>
-    </div>
-    
     <footer class="page-footer transparent">
         <div class="row foot-image-contenedor">
-            <div><img class="images" src="/materialize/images/whatsapp.svg" alt=""></div>
-            <div><img class="images" src="/materialize/images/tiktok.svg" alt=""></div>
-            <div><img class="images" src="/materialize/images/ig.svg" alt=""></div>
+            <a href=""> <i class="fa-brands fa-whatsapp" style="color: #000000;"></i> </a>
+            <a href=""> <i class="fa-brands fa-tiktok" style="color: #000000;"></i></i> </a>
+            <a href=""> <i class="fa-brands fa-instagram" style="color: #000000;"></i> </a> 
         </div>
     </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
 
 </html>
