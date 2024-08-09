@@ -68,6 +68,24 @@
             font-family: 'Caveat';
             font-size: 3rem;
         }
+
+        @media (max-width: 767px) {
+
+            .navbar-toggler {
+                display: block;
+                margin-left: auto;
+                z-index: 10;
+            }
+            .navbar-collapse {
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: black;
+                padding: 10px;
+                border-radius: 0 0 5px 5px;
+                z-index: 10;
+            }
+        }
     </style>
 </head>
 <body>
