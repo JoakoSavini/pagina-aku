@@ -236,7 +236,7 @@
             <div class="contenedor-servicio d-flex justify-content-center flex-wrap">
                 <div class="card mx-2 mb-3" style="width: 18rem;">
                     <div class="video-container">
-                        <video id="Video" controls preload="none" src="images/servicios/videos-musicales/vp2.mp4" type="video/mp4" poster=""></video>
+                        <video id="Video" controls preload="none" controls src="images/servicios/videos-musicales/vp2.mp4" type="video/mp4" poster=""></video>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Videos Corporativos</h5>
@@ -245,7 +245,7 @@
                 </div>
                 <div class="card mx-2 mb-3" style="width: 18rem;">
                     <div class="video-container">
-                        <video id="Video" controls preload="none" src="images/servicios/videos-musicales/vp1.mp4" type="video/mp4" poster=""></video>
+                        <video id="Video" controls preload="none" controls src="images/servicios/videos-musicales/vp1.mp4" type="video/mp4" poster=""></video>
                     </div>
                     <div class="card-body">
                         <h5 class="card-title">Videos Institucionales</h5>
@@ -296,12 +296,24 @@
                 video.currentTime = 0;
         
                 // Agregar evento de clic para reproducir/pausar
-                video.addEventListener('click', function() {
+                video.addEventListener('click', function(e) {
+                    // Prevenir la propagación del evento
+                    e.stopPropagation();
+                    
                     if (this.paused) {
                         this.play();
                     } else {
                         this.pause();
                     }
+                });
+        
+                // Prevenir que el clic en los controles pause/reproduzca el video
+                video.addEventListener('play', function(e) {
+                    e.stopPropagation();
+                });
+        
+                video.addEventListener('pause', function(e) {
+                    e.stopPropagation();
                 });
             });
         });

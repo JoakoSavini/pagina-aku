@@ -2,15 +2,17 @@
 document.getElementById('datos_form').addEventListener('submit', function(event){
     event.preventDefault();
     
-    const nombre = document.querySelector('#first_name').value;
-    const apellido = document.querySelector('#last_name').value;
+    const nombre = document.querySelector('#nombre').value;
+    const apellido = document.querySelector('#apellido').value;
     const email = document.querySelector('#email').value;
-    const mensaje = document.querySelector('#message').value;
+    const mensaje = document.querySelector('#mensaje').value;
+    const servicio = document.querySelector('input[name="flexRadioDefault"]:checked')?.value;
 
     //*Si se valida, creo nuevo usuario
-    if (validarDatos(nombre, apellido, email, mensaje)){
+    if (validarDatos(nombre, apellido, email, mensaje, servicio)){
         const nuevo_usuario = {
             id: generarID(),
+            servicio,
             nombre,
             apellido,
             email,
@@ -28,8 +30,8 @@ document.getElementById('datos_form').addEventListener('submit', function(event)
 //Declaro las funciones de toma de valores
 
 //*Primero la funcion de validación
-const validarDatos = (nombre, apellido, email, mensaje) => {
-    if (!nombre || !apellido || !email || !mensaje){
+const validarDatos = (nombre, apellido, email, mensaje, servicio) => {
+    if (!servicio || !nombre || !apellido || !email || !mensaje){
         alert('Complete todos los campos')
         return false;
     }
@@ -43,5 +45,3 @@ const generarID = () => {
     localStorage.setItem('idUsuario', id.toString());
     return id;
 }
-
-
