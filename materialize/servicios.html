@@ -296,6 +296,18 @@
         </div>
     </footer>
 
+    <!-- script para pausar videos -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var iframes = document.querySelectorAll('iframe');
+            iframes.forEach(function(iframe) {
+                var src = iframe.src;
+                iframe.src = ''; // Limpia el src para detener la reproducción
+                iframe.src = src; // Vuelve a establecer el src para cargar el video
+            });
+        });
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
