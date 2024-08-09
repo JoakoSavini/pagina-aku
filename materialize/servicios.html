@@ -69,23 +69,61 @@
             /* Elimina el margen predeterminado del iframe */
         }
 
+        @media only screen and (max-width: 992px) {
+            .card {
+                height: auto;
+            }
+            
+            .sidenav {
+                transform: translateY(100%);
+                right: 0;
+                left: auto;
+                background-color: white;
+            }
+
+            .sidenav.show {
+                transform: translateX(0);
+            }
+
+            nav .brand-logo {
+                left: 0.5rem;
+                transform: translateX(0);
+            }
+
+            nav .sidenav-trigger {
+                float: right;
+                position: relative;
+                z-index: 1;
+                height: 56px;
+                margin: 0 18px;
+            }
+        }
+
+        .sidenav li > a {
+            color: black;
+        }
+
+
     </style>
 </head>
 <body>
     <div class="navbar-fixed">
         <nav class="nav-wrapper z-depth-0 black">
-            <div class="space-nav">
                 <a href="index_final.html" class="brand-logo"><img class="logo" src="images/logos/Photo by Aguzer0 white.png" alt=""></a>
-                <a href="#" data-target="menu-mobile" class="sidenav-trigger"><i
-                        class="material-icons black-text text-darken2">menu</i></a>
+                <a href="#" data-target="menu-mobile" class="sidenav-trigger right"><i class="material-icons white-text">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a class="white-text" href="about_me.html">Acerca de mi</a></li>
                     <li><a class="white-text" href="servicios.html">Fotos y Videos</a></li>
                     <li><a class="white-text" href="contacto.html">Contacto</a></li>
                 </ul>
-            </div>
         </nav>
     </div>
+
+    <ul id="menu-mobile" class="sidenav">
+        <li><a href="about_me.html">Acerca de mi</a></li>
+        <li><a href="servicios.html">Fotos y Videos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
 
     <div class="contenido">
         <div class="container">
@@ -309,5 +347,8 @@
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
 </body>
 </html>
