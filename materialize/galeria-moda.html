@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Moda</title>
+    <!-- Materialize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- Custom Fonts -->
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo {
+            width: 60px;
+            position: absolute;
+            top: -10px;
+        }
+
+        .contenido {
+            flex: 1;
+        }
+
+        .video-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 200px;
+            margin: 0;
+        }
+
+        .col {
+            padding: 0 12px;
+        }
+
+        a {
+            font-family: 'Titillium Web';
+            color: black;
+            text-decoration: none;
+        }
+
+        div {
+            font-family: 'Titillium Web';
+        }
+
+        h2 {
+            font-family: 'Caveat';
+            font-size: 3rem;
+        }
+
+        @media (max-width: 767px) {
+            .sidenav-trigger {
+                display: block;
+                margin-left: auto;
+                z-index: 10;
+            }
+            .sidenav {
+                background-color: black;
+                padding: 10px;
+                border-radius: 0 0 5px 5px;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .navbar {
+                padding: 20px 40px;
+                font-size: 3rem;
+            }
+
+            .navbar-nav {
+                gap: 45px;
+            }
+
+            .navbar-brand img {
+                width: 120px;
+            }
+
+            .navbar-nav .nav-link {
+                font-size: 3rem;
+            }
+
+            footer {
+                padding: 20px 40px;
+                font-size: 1.5rem;
+            }
+
+            .icons a {
+                font-size: 4rem;
+            }
+
+            h2 {
+                font-size: 7rem;
+            }
+
+            .grid-item {
+                width: 50%;
+                margin-bottom: 2rem;
+            }
+
+            .grid-item img {
+                width: 100%;
+                height: auto;
+            }
+
+            .container {
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="black">
+        <div class="nav-wrapper container">
+            <a href="index.html" class="brand-logo">
+                <img class="img-fluid logo" src="images/logos/Photo by Aguzer0 white.png" alt="Logo">
+            </a>
+            <a href="#" data-target="mobile-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="about_me.html">Acerca de Mi</a></li>
+                <li><a href="servicios.html">Fotos y Videos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-menu">
+        <li><a href="about_me.html">Acerca de Mi</a></li>
+        <li><a href="servicios.html">Fotos y Videos</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <div class="container">
+        <h2 class="center-align">Fotos de Modelaje</h2>
+        <div class="row grid">
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/0361b8144122925.62867d2bca774.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/4e7900138068157.621645cf656da.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/ef03b0138064251.621639bd58dcd.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e91a58144122925.62867d2a3bf1e.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/f6860a138068157.621645cf64b76.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/16e371138068157.621645cf66462.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/1e2dde138068157.621645cf6414b.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/b0e689138067373.62164385a3a76.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/252567138068157.621645cd8649f.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/3e540c138068157.621645cd86e50.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/7ea3d7193928909.65f37c9eeb68b.jpg" class="responsive-img w-100" alt="#">
+            </div>
+            <div class="col s6 m4 mb-3 grid-item">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/47d673138064251.621639bd58599.jpg" class="responsive-img w-100" alt="#">
+            </div>
+        </div>
+    </div>
+
+    <footer class="black">
+        <div class="container center-align">
+            <div class="icons">
+                <a href="https://x.com/aguzero" class="me-3"> <i class="fa-brands fa-x-twitter" style="color: #ffffff;"></i> </a>
+                <a href="https://www.tiktok.com/@aguzer0" class="me-3"> <i class="fa-brands fa-tiktok" style="color: #ffffff;"></i> </a>
+                <a href="https://www.instagram.com/aguzero/" class="me-3"> <i class="fa-brands fa-instagram" style="color: #ffffff;"></i> </a> 
+            </div>
+        </div>
+    </footer>
+
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Masonry Layout -->
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Masonry
+            var elem = document.querySelector('.grid');
+            var msnry = new Masonry( elem, {
+                // options
+                itemSelector: '.grid-item',
+                columnWidth: '.grid-item',
+                percentPosition: true
+            });
+        });
+    </script>

@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Acerca de Mi</title>
+    <!-- Materialize CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/fonts.css">
@@ -13,50 +13,41 @@
             height: 100%;
             margin: 0;
         }
-
+        
         body {
-            background-image:  url('images/about1.jpg');
-            background-size: cover; /* que cubra todo el body */
+            background-image: url('images/about1.jpg');
+            background-size: cover;
             background-repeat: no-repeat;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
-            overflow-x: hidden; /* para evitar desbordamiento horizontal */
-            min-width: 100vw;
-        }
-
-        .foot-image-contenedor {
-            display: flex;
-            justify-content: end;
-            gap: 20px;
-            backdrop-filter: blur(1px);
+            overflow-x: hidden;
         }
 
         .icons a {
             font-size: 1.5rem;
             text-decoration: none;
-            border: none; /* esto es para eliminar bordes que tenga el link */
+            border: none;
         }
 
         .logo {
             width: 60px;
             position: absolute;
-            top: -10px; /* tuvimos que colocarlo manualmente por problemas con la img original */
+            top: -10px;
         }
 
         .contenido {
-            flex: 1; /* para enviar el footer al fondo de página */
+            flex: 1;
             padding-bottom: 50vh;
         }
-
-        h1{
+        
+        h1 {
             font-family: 'Amatic';
             font-size: 4rem;
             margin-bottom: 0.5rem;
         }
-
+        
         h3 {
-            
             font-family: 'Amatic';
             font-size: 2rem;
             margin-bottom: 0.5rem;
@@ -67,100 +58,176 @@
             margin-bottom: 0.5rem;
         }
 
+        a {
+            font-family: 'Titillium Web';
+        }
+
         .text-justify {
             text-align: justify;
         }
 
         .vertical-spacer {
-            height: 30vh; /* Ajusta este valor según necesites */
+            height: 30vh; 
         }
 
         .second-text {
-            width: 25%; /* Aumenta el ancho del texto */
-            margin-left: auto; /* Empuja el texto hacia la derecha */
-            padding-right: 2vw; /* 0.5% del ancho de la ventana */
-            margin-right: 2vw; /* 0.3% del ancho de la ventana */
+            width: 25%;
+            margin-left: auto;
+            padding-right: 2vw;
+            margin-right: 2vw;
         }
 
+        @media (max-width: 767.98px) {
+            body {
+                background-image: none;
+            }
+            .icons a {
+                font-size: 1.2rem;
+            }
+            footer {
+                padding: 5px;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            .logo {
+                width: 60px;
+            }
+        }
     </style>
 </head>
-
 <body>
-    <nav class="black">
-        <div class="nav-wrapper">
-            <a href="index_final.html" class="brand-logo"><img class="logo" src="images/logos/Photo by Aguzer0 white.png" alt=""></a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"></i></a>
+    <!-- Navbar -->
+    <nav class="nav-extended black">
+        <div class="nav">
+            <a href="index.html" class="brand-logo">
+                <img class="logo" src="images/logos/Photo by Aguzer0 white.png" alt="">
+            </a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-                <li><a href="about_me.html">Acerca de Mi</a></li>
-                <li><a href="servicios.html">Fotos y Videos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#" class="white-text">Acerca de Mi</a></li>
+                <li><a href="servicios.html" class="white-text">Fotos y Videos</a></li>
+                <li><a href="contacto.html" class="white-text">Contacto</a></li>
             </ul>
         </div>
     </nav>
 
+    <!-- Sidebar para móvil -->
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="about_me.html">Acerca de Mi</a></li>
+        <li><a href="#">Acerca de Mi</a></li>
         <li><a href="servicios.html">Fotos y Videos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
     </ul>
 
-    <div class="contenido">
-        <div class="center-align">
+    <!-- Contenido para Pc o pantallas mayores -->
+    <div class="hide-on-small-only">
+        <div class="contenido">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 center-align">
+                        <h1>¡Hola!</h1>
+                        <h3>Soy Augusto...</h3>
+                    </div>
+                </div>
+
+                <div class="row center-align">
+                    <div class="col s12 m4">
+                        <p class="text-justify">Fotógrafo y filmmaker, preparado para nuevos desafíos. 
+                            Amo viajar y llevar conmigo mi cámara & dron para guardar lo más lindo de cada lugar.
+                            Intento combinar una realización cinematográfica dinámica con un gran poder visual, logrando que cada trabajo hable por sí solo.
+                            Me apasiona experimentar diversos proyectos y que las personas puedan sentir lo mismo que yo sentí durante su creación.
+                            Más que una profesión, es una forma de vida, de conectar con el mundo.
+                            Únete a mí en este viaje y hagamos algo extraordinario juntos.
+                        </p>
+                    </div>
+                    <div class="col s12 m8"></div>
+                </div>
+
+                <div class="vertical-spacer"></div>
+
+                <div class="row">
+                    <div class="col s12 m2 offset-m9 second-text">
+                        <p class="text-justify">Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S
+                            y un conjunto de herramientas de edición como Premiere Pro, After Effects, Lightroom 
+                            y Photoshop, supero los límites de la creatividad, incluso experimentando con contenido IA.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="vertical-spacer"></div>
+
+                <div class="row center-align">
+                    <div class="col s12 m4">
+                        <p class="text-justify">Influenciado por Peter McKinnon, Sam Kolder, Ben Brown,
+                            y Matti Haapoja, me esfuerzo por evocar emociones a través de mi arte. 
+                            Con mi trabajo intento que cada imagen se cuente con pasión y narre una historia.
+                        </p>
+                    </div>
+                    <div class="col s12 m8"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contenido para Móvil -->
+    <div class="hide-on-med-and-up">
+        <div class="container">
             <div class="row">
-                <div class="col s12 m12 l12">
-                    <h1>¡Hola!</h1>
+                <div class="col s12 center-align">
+                    <h1 class="display-4">¡Hola!</h1>
+                    <h3 class="mb-4">Soy Augusto...</h3>
                 </div>
-                <div class="col s12 ">
-                    <h3>Soy Augusto...</h3>
-                </div>
-                <div class="col m4">
-                    <p class="text-justify">Fotógrafo y filmmaker, preparado para nuevos desafíos. 
+            </div>
+            
+            <div class="row">
+                <div class="col s12 center-align">
+                    <p>Fotógrafo y filmmaker, preparado para nuevos desafíos. 
                         Amo viajar y llevar conmigo mi cámara & dron para guardar lo más lindo de cada lugar.
-                        Intento combinar una realización cinematográfica dinámica con un gran poder visual, logrando que cada trabajo hable por sí solo.
-                        Me apasiona experimentar diversos proyectos y que las personas puedan sentir lo mismo que yo sentí durante su creación.
-                        Más que una profesión, es una forma de vida, de conectar con el mundo.
-                        Únete a mí en este viaje y hagamos algo extraordinario juntos.
                     </p>
                 </div>
-                <div class="col m8"></div> <!-- Columna vacía para centrar -->
             </div>
 
-            <div class="vertical-spacer"></div>
+            <div class="row">
+                <div class="col s12">
+                    <img src="images/about1.jpg" class="responsive-img mb-4" alt="About image">
+                </div>
+            </div>
 
             <div class="row">
-                <div class="col m9"></div> <!-- Columna vacía para centrar -->
-
-                <div class="col m2 second-text">
-                    <p class="text-justify">Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S
+                <div class="col s12 center-align">
+                    <p>Equipado con mi Sony a7s III, Sony a6100, DJI Air 2S
                         y un conjunto de herramientas de edición como Premiere Pro, After Effects, Lightroom 
                         y Photoshop, supero los límites de la creatividad, incluso experimentando con contenido IA.
                     </p>
                 </div>
             </div>
-
-            <div class="vertical-spacer"></div>
-
-            <div class="row">
-                <div class="col m4">
-                    <p class="text-justify">Influenciado por Peter McKinnon, Sam Kolder, Ben Brown,
-                        y Matti Haapoja, me esfuerzo por evocar emociones a través de mi arte. 
-                        Con mi trabajo intento que cada imagen se cuente con pasión y narre una historia.
-                    </p>
-                </div>
-                <div class="col m7"></div> <!-- Columna vacía para centrar -->
-            </div>
         </div>
     </div>
 
+    <!-- Footer -->
     <footer class="page-footer transparent">
-        <div class="row foot-image-contenedor">
-            <a href="https://x.com/aguzero"> <i class="fa-brands fa-x-twitter" style="color: #000000;"></i> </a>
-            <a href="https://www.tiktok.com/@aguzer0"> <i class="fa-brands fa-tiktok" style="color: #000000;"></i></i> </a>
-            <a href="https://www.instagram.com/aguzero/"> <i class="fa-brands fa-instagram" style="color: #000000;"></i> </a> 
+        <div class="container">
+            <div class="row">
+                <div class="col s12 right-align">
+                    <a href="https://x.com/aguzero" class="black-text"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.tiktok.com/@aguzer0" class="black-text"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/aguzero/" class="black-text"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
         </div>
     </footer>
 
-
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        // Inicialización del sidenav para móviles
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
 </body>
-
 </html>

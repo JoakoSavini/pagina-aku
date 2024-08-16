@@ -42,9 +42,16 @@
             top: -10px; /*tuvimos que colocarlo manualmente por problemas con la img original*/
         }
 
-        .card{
-            height: 46em;
+        .card {
+        min-height: 300px; /* Ajusta este valor según sea necesario */
+        overflow: auto;
         }
+
+        .card-content p {
+            overflow: auto;
+            text-overflow: ellipsis; /* Si quieres agregar puntos suspensivos al texto largo */
+        }
+
 
         .videos{
             height: 30em;
@@ -168,7 +175,7 @@
                     </div>
                 </div>
 
-                <div class="container center"><a href="#" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
+                <div class="container center"><a href="/materialize/galeria-productos.html" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
                 
             </div>
 
@@ -218,7 +225,7 @@
                 </div>
                 
             </div>
-            <div class="container center"><a href="#" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
+            <div class="container center"><a href="/materialize/galeria-moda.html" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
 
                 
         </div>
@@ -267,7 +274,7 @@
     
             </div>
 
-            <div class="container center"><a href="#" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
+            <div class="container center"><a href="/materialize/galeria-dron.html" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
 
         </div>
 
