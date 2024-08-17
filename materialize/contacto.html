@@ -19,6 +19,10 @@
             background-repeat: no-repeat;
         }
 
+        a {
+            font-family: 'Titillium Web';
+        }
+
         .contenedor {
             position: relative;
             width: 100%;
@@ -83,16 +87,14 @@
             align-items: center;
             padding: 10px 0;
         }
-        
+
         footer .row {
             margin: 0;
         }
-        
+
         footer .row a {
-            margin: 0 10px; /* Espaciado entre los iconos */
+            margin: 0 10px;
         }
-        
-        
 
         i {
             font-size: 1.5rem;
@@ -113,6 +115,45 @@
         .contenido img {
             max-width: 100%;
             max-height: 100%;
+        }
+
+        /* Estilos responsivos para pantallas pequeñas */
+        @media (max-width: 600px) {
+            .nav-wrapper {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .checkbox-container label {
+                flex: 0 0 50%;
+                text-align: left;
+            }
+
+            .checkbox-container label span {
+                display: block;
+                margin-top: 0.5rem;
+            }
+        }
+
+        /* Estilos para pantallas grandes (más de 1600px) */
+        @media (min-width: 1600px) {
+            .nav-wrapper a img.logo {
+                width: 120px;
+            }
+
+            footer .row a i {
+                font-size: 3rem;
+            }
+
+            .checkbox-container label span {
+                font-size: 1.5rem;
+            }
+
+            .input-field input,
+            .input-field textarea,
+            label {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -142,7 +183,7 @@
                 </label>
                 <label>
                     <input type="radio" name="flexRadioDefault" value="Moda" class="filled-in" />
-                    <span>Moda</span>
+                    <span>Modelo</span>
                 </label>
                 <label>
                     <input type="radio" name="flexRadioDefault" value="Dron" class="filled-in" />
@@ -150,16 +191,16 @@
                 </label>
                 <label>
                     <input type="radio" name="flexRadioDefault" value="Video Profesional" class="filled-in" />
-                    <span>Video Profesional</span>
+                    <span>Video</span>
                 </label>
             </div>
             <div class="input-field">
                 <input id="nombre" type="text" class="validate">
-                <label for="nombre">Nombre</label>
+                <label for="nombre">Nombre *</label>
             </div>
             <div class="input-field">
                 <input id="apellido" type="text" class="validate">
-                <label for="apellido">Apellido</label>
+                <label for="apellido">Apellido *</label>
             </div>
             <div class="input-field">
                 <input id="email" type="email" class="validate">
@@ -183,7 +224,6 @@
         </div>
     </footer>
 
-    <script src="js/contacto.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 

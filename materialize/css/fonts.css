@@ -1,13 +1,20 @@
 @font-face {
     font-family: 'Titillium Web';
-    src: url('/bootstrap/fonts/Titillium_Web/TitilliumWeb-Regular.ttf') format('truetype');
+    src: url('/materialize/fonts/Titillium_Web/TitilliumWeb-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Amatic';
-    src: url('/bootstrap/fonts/Amatic_SC/AmaticSC-Bold.ttf') format('truetype');
+    src: url('/materiaize/fonts/Amatic_SC/AmaticSC-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caveat';
+    src: url('/materialize/fonts/Caveat/static/Caveat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
