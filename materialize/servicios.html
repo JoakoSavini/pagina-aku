@@ -47,8 +47,8 @@
         }
 
         .card {
-        min-height: 200px; /* Ajusta este valor según sea necesario */
-        overflow: auto;
+            height: 90vh; /* Ajusta este valor según sea necesario */
+            overflow: auto;
         }
 
         .card-content p {
@@ -58,7 +58,7 @@
 
 
         .videos{
-            height: 30em;
+            height: 10em;
         }
 
 
@@ -81,21 +81,6 @@
         }
 
         @media only screen and (max-width: 992px) {
-            .card {
-                height: auto;
-            }
-            
-            .sidenav {
-                transform: translateY(100%);
-                right: 0;
-                left: auto;
-                background-color: white;
-            }
-
-            .sidenav.show {
-                transform: translateX(0);
-            }
-
             nav .brand-logo {
                 left: 0.5rem;
                 transform: translateX(0);
@@ -114,6 +99,66 @@
             color: black;
         }
 
+        @media only screen and (min-width: 1600px) {
+            /* Ajustar tamaño del texto */
+            h3, .card-title {
+                font-size: 5.5rem;
+            }
+
+            p{
+                font-size: 2rem;
+            }
+        
+            /* Ajustar tamaño del logo en el navbar */
+            .logo {
+                width: 90px;
+                top: -20px; /* Ajuste manual si es necesario */
+            }
+        
+            /* Ajustar tamaño de los íconos en el footer */
+            .icons a {
+                font-size: 3.5rem;
+                padding: 0.6em;
+            }
+
+            .card {
+                height: 100vh;  
+            }
+
+            .videos {
+                height: 60vh;
+            }
+
+            .btn{
+                font-size: 2rem;
+                padding: 0.75rem 1.5rem;
+                height: 2em;
+            }
+
+            
+        
+            /* Aumentar el tamaño de las imágenes en las cards */
+                
+        
+            /* Ajustar el tamaño del navbar */
+            nav {
+                height: 80px;
+            }
+        
+            nav .brand-logo {
+                font-size: 2.5rem;
+            }
+        
+            /* Ajustar el tamaño del texto en los enlaces del navbar */
+            nav ul li a {
+                font-size: 2rem;
+            }
+        
+            /* Aumentar el tamaño del footer */
+            footer {
+                padding: 20px 0;
+            }
+        }
 
     </style>
 </head>
@@ -149,7 +194,7 @@
                         
                         <div class="card-content">
                             <span class="card-title">Gastronomia</span>
-                            <p>Destaca tus productos con fotografías profesionales...</p>
+                            <p>Destaca tus productos con fotografías profesionales.</p>
                         </div>
                     </div>
                 </div>
@@ -162,7 +207,7 @@
                         
                         <div class="card-content">
                             <span class="card-title">Tattoo</span>
-                            <p>Aumentá tus ventas en línea con fotografías de productos...</p>
+                            <p>Aumentá tus ventas en línea con fotografías de productos.</p>
                         </div>
                     </div>
                 </div>
@@ -174,12 +219,12 @@
                         </div>
                         <div class="card-content">
                             <span class="card-title">Gym</span>
-                            <p>Potencia tus campañas de marketing...</p>
+                            <p>Potencia tus campañas de marketing.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="container center"><a href="/materialize/galeria-productos.html" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
+                <div class="container center"><a href="/materialize/galeria-productos.html" tabindex="0" class="btn elevated center blue buttons">Ver Mas</a></div>
                 
             </div>
 
@@ -229,7 +274,7 @@
                 </div>
                 
             </div>
-            <div class="container center"><a href="/materialize/galeria-moda.html" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
+            <div class="container center buttons"><a href="/materialize/galeria-moda.html" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
 
                 
         </div>
@@ -332,7 +377,7 @@
                 
             </div>
 
-            <div class="container center"><a href="https://www.youtube.com/watch?v=Aa0aw_CGTBM&list=PLAucbdr-yGtbxJ9-jIps9aNcVECjc2fC1" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
+            <div class="container center buttons"><a href="https://www.youtube.com/watch?v=Aa0aw_CGTBM&list=PLAucbdr-yGtbxJ9-jIps9aNcVECjc2fC1" tabindex="0" class="btn elevated center blue">Ver Mas</a></div>
 
         </div>
     </div>

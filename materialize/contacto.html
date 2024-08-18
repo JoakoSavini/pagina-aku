@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
 
     <style>
         /* Estilos para el fondo */
@@ -22,6 +23,12 @@
         a {
             font-family: 'Titillium Web';
         }
+
+        h3{
+            font-family: 'Amatic';
+        }
+
+        
 
         .contenedor {
             position: relative;
@@ -118,12 +125,7 @@
         }
 
         /* Estilos responsivos para pantallas pequeñas */
-        @media (max-width: 600px) {
-            .nav-wrapper {
-                display: flex;
-                justify-content: space-between;
-            }
-
+        @media (max-width: 1000px) {
             .checkbox-container label {
                 flex: 0 0 50%;
                 text-align: left;
@@ -133,45 +135,134 @@
                 display: block;
                 margin-top: 0.5rem;
             }
+
+            nav .brand-logo {
+                left: 0.5rem;
+                transform: translateX(0);
+            }
+
+            nav .sidenav-trigger {
+                float: right;
+                position: relative;
+                z-index: 1;
+                height: 56px;
+                margin: 0 18px;
+            }
         }
 
-        /* Estilos para pantallas grandes (más de 1600px) */
-        @media (min-width: 1600px) {
-            .nav-wrapper a img.logo {
-                width: 120px;
-            }
 
-            footer .row a i {
+        @media (max-width: 767.98px) {
+            body {
+                background-image: none;
+            }
+            .icons a {
                 font-size: 3rem;
             }
-
-            .checkbox-container label span {
+            footer {
+                padding: 5px;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            h3 {
                 font-size: 1.5rem;
             }
+            .logo {
+                width: 60px;
+            }
 
+            nav .brand-logo {
+                left: 0.5rem;
+                transform: translateX(0);
+            }
+
+            .title-subtitle {
+                margin-top: 5em;
+            }
+        }
+
+        @media (min-width: 1600px) {
+
+            .logo {
+                width: 90px;
+                top: -20px; /* Ajuste manual si es necesario */
+            }
+         
+            /* Ajustar el tamaño del navbar */
+            nav {
+                height: 80px;
+            }
+        
+            nav .brand-logo {
+                font-size: 2.5rem;
+            }
+        
+            /* Ajustar el tamaño del texto en los enlaces del navbar */
+            nav ul li a {
+                font-size: 2rem;
+            }
+
+            .contenedor-form {
+                max-width: 800px; /* Aumenta el tamaño máximo del formulario */
+                padding: 30px; /* Aumenta el padding para dar más espacio */
+                height: 55vh;
+            }
+        
             .input-field input,
             .input-field textarea,
             label {
+                font-size: 1.5rem; /* Agranda el tamaño de fuente de los inputs y labels */
+            }
+        
+            h5 {
+                font-size: 2rem; /* Agranda el tamaño del título */
+            }
+        
+            .checkbox-container label span {
+                font-size: 1.5rem; /* Agranda el tamaño de los textos de los checkboxes */
+            }
+        
+            .checkbox-container label {
+                margin-bottom: 15px; /* Añade más espacio entre los checkboxes */
+            }
+        
+            .btn{
+                font-size: 1.5rem;
+                padding: 0.75rem 1.5rem;
+                height: 2.5em;
+            }
+
+            .btn i {
                 font-size: 1.5rem;
             }
+
+            i {
+                font-size: 3rem;
+            }
+            
         }
     </style>
 </head>
 
 <body>
-    <nav class="nav-wrapper z-depth-0 transparent">
-        <div class="space-nav">
-            <a href="index_final.html" class="brand-logo white-text text-darken-4"><img class="logo"
-                    src="images/logos/Photo by Aguzer0 black.png" alt=""></a>
-            <a href="#" data-target="menu-mobile" class="sidenav-trigger"><i
-                    class="material-icons white-text text-darken2">menu</i></a>
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper z-depth-0 transparent">
+            <a href="index_final.html" class="brand-logo"><img class="logo"src="images/logos/Photo by Aguzer0 black.png" alt=""></a>
+            <a href="#" data-target="menu-mobile" class="sidenav-trigger right"><i
+                    class="material-icons black-text">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a class="black-text text-darken2" href="about_me.html">Acerca de Mi</a></li>
                 <li><a class="black-text text-darken2" href="servicios.html">Fotos y Videos</a></li>
                 <li><a class="black-text text-darken2" href="contacto.html">Contacto</a></li>
             </ul>
-        </div>
-    </nav>
+        </nav>
+    </div>
+
+    <ul id="menu-mobile" class="sidenav black">
+        <li><a href="about_me.html" class="white-text">Acerca de mi</a></li>
+        <li><a href="servicios.html" class="white-text">Fotos y Videos</a></li>
+        <li><a href="contacto.html" class="white-text">Contacto</a></li>
+    </ul>
 
     <div class="contenedor">
         <form id="datos_form" class="contenedor-form">
@@ -211,20 +302,23 @@
                 <label for="mensaje">Mensaje</label>
             </div>
             <div class="center-align">
-                <button type="submit" class="btn black">ENVIAR <i class="material-icons right">send</i></button>
+                <button type="submit" class="btn black button-submit">ENVIAR <i class="material-icons right">send</i></button>
             </div>
         </form>
     </div>
 
     <footer class="page-footer transparent">
         <div class="row">
-            <a href=""><i class="fa-brands fa-whatsapp" style="color: #000000;"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter" style="color: #000000;"></i></a>
             <a href=""><i class="fa-brands fa-tiktok" style="color: #000000;"></i></a>
             <a href=""><i class="fa-brands fa-instagram" style="color: #000000;"></i></a>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
 </body>
 
 </html>
