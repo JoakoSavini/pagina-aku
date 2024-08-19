@@ -48,44 +48,36 @@
         }
 
         @media (min-width: 1600px) {
-            .navbar {
-                padding: 20px 40px;
-                font-size: 3rem;
+            .logo {
+                width: 70px; 
             }
-
-            .navbar-nav {
-                gap: 45px;
+         
+        
+            /* Ajustar el tamaño del navbar */
+            nav {
+                height: 80px;
             }
-
-            .navbar-brand img {
-                width: 120px;
+        
+            nav .brand-logo {
+                font-size: 2.5rem;
             }
-
-            .navbar-nav .nav-link {
-                font-size: 3rem;
-            }
-
-            footer {
-                padding: 20px 40px;
+        
+            /* Ajustar el tamaño del texto en los enlaces del navbar */
+            nav ul li a {
                 font-size: 1.5rem;
             }
+        
+            i {
+                font-size: 2em;
+            }
 
-            .icons a {
-                font-size: 4rem;
+            /* Aumentar el tamaño del footer */
+            footer {
+                padding: 20px 0;
             }
 
             h2 {
                 font-size: 7rem;
-            }
-
-            .grid-item {
-                width: 50%;
-                margin-bottom: 2rem;
-            }
-
-            .grid-item img {
-                width: 100%;
-                height: auto;
             }
 
             .container {
@@ -187,18 +179,19 @@
         </div>
     </div>
 
-    <footer class="page-footer black">
+    <footer class="page-footer transparent">
         <div class="container">
             <div class="icons center-align">
-                <a href="https://x.com/aguzero" class="white-text"> <i class="fa-brands fa-x-twitter"></i> </a>
-                <a href="https://www.tiktok.com/@aguzer0" class="white-text"> <i class="fa-brands fa-tiktok"></i> </a>
-                <a href="https://www.instagram.com/aguzero/" class="white-text"> <i class="fa-brands fa-instagram"></i> </a> 
+                <a href="https://x.com/aguzero" class="black-text"> <i class="fa-brands fa-x-twitter"></i> </a>
+                <a href="https://www.tiktok.com/@aguzer0" class="black-text"> <i class="fa-brands fa-tiktok"></i> </a>
+                <a href="https://www.instagram.com/aguzero/" class="black-text"> <i class="fa-brands fa-instagram"></i> </a> 
             </div>
         </div>
     </footer>
-
+    
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
+    
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var video = document.getElementById('video');
@@ -209,27 +202,23 @@
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems);
         });
-    </script>
 
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-
-    <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // Initialize Masonry
             var elem = document.querySelector('.grid');
-            var msnry = new Masonry(elem, {
+            var msnry = new Masonry( elem, {
+                // options
                 itemSelector: '.grid-item',
                 columnWidth: '.grid-item',
                 percentPosition: true
             });
+
+            // Auto initialize Materialize
+            M.AutoInit();
         });
     </script>
 
-    <script>
-        // Inicialización del sidenav para móviles
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
-        });
-    </script>
+    
+
 </body>
 </html>
