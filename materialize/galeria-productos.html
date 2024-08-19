@@ -8,6 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <style>
         html,
@@ -78,24 +79,37 @@
             object-fit: cover; /* Asegura que la imagen cubra el contenedor manteniendo la proporción */
         }
 
-        @media (max-width: 767px) {
 
-            .navbar-toggler {
-                display: block;
-                margin-left: auto;
-                z-index: 10;
+        @media (max-width: 767.98px) {
+            body {
+                background-image: none;
+            }
+            .icons a {
+                font-size: 3rem;
+            }
+            footer {
+                padding: 5px;
+            }
+            h1 {
+                font-size: 3rem;
+            }
+            h3 {
+                font-size: 1.5rem;
+            }
+            .logo {
+                width: 60px;
             }
 
-            .navbar-collapse {
-                position: absolute;
-                top: 100%;
-                right: 0;
-                background-color: black;
-                padding: 10px;
-                border-radius: 0 0 5px 5px;
-                z-index: 10;
+            nav .brand-logo {
+                left: 0.5rem;
+                transform: translateX(0);
+            }
+
+            .title-subtitle {
+                margin-top: 5em;
             }
         }
+        
 
         @media (min-width: 1600px) {
             .navbar {
@@ -146,22 +160,20 @@
     </style>
 </head>
 <body>
-    <nav>
-        <div class="nav-wrapper black">
-            <a href="index.html" class="brand-logo">
-                <img class="logo" src="images/logos/Photo by Aguzer0 white.png" alt="">
-            </a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="about_me.html" class="white-text">Acerca de Mi</a></li>
-                <li><a href="servicios.html" class="white-text">Fotos y Videos</a></li>
-                <li><a href="contacto.html" class="white-text">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
+    <div class="navbar-fixed">
+        <nav class="nav-wrapper z-depth-0 black">
+                <a href="index.html" class="brand-logo"><img class="logo" src="images/logos/Photo by Aguzer0 white.png" alt=""></a>
+                <a href="#" data-target="menu-mobile" class="sidenav-trigger right"><i class="material-icons white-text">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="white-text" href="about_me.html">Acerca de mi</a></li>
+                    <li><a class="white-text" href="servicios.html">Fotos y Videos</a></li>
+                    <li><a class="white-text" href="contacto.html">Contacto</a></li>
+                </ul>
+        </nav>
+    </div>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="about_me.html">Acerca de Mi</a></li>
+    <ul id="menu-mobile" class="sidenav">
+        <li><a href="about_me.html">Acerca de mi</a></li>
         <li><a href="servicios.html">Fotos y Videos</a></li>
         <li><a href="contacto.html">Contacto</a></li>
     </ul>
@@ -222,4 +234,13 @@
     <script>
         document.addEventListener('DOMContentLoaded')
     </script>
+
+    <script>
+        // Inicialización del sidenav para móviles
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+    </script>
+</body>
     
