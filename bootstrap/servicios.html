@@ -39,7 +39,6 @@
         img {
             width: 20%;
         }
-
         
 
         .video-container {
@@ -75,6 +74,14 @@
             font-size: 3rem;
         }
 
+        .card {
+            height: 90vh;
+        }
+
+        .videos {
+            height: 60vh;
+        }
+
 
         @media (max-width: 767px) {
             .contenedor-servicio {
@@ -85,6 +92,11 @@
             .card {
                 width: 100% !important;
                 margin-bottom: 20px;
+                height: 80vh;
+            }
+
+            .videos{
+                height: 50vh;
             }
 
             .video-container iframe {
@@ -209,7 +221,7 @@
                         <img src="images/servicios/producto-modelo/p1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Gastronomía</h5>
-                            <p class="card-text">Destaca tus productos con fotografías profesionales...</p>
+                            <p class="card-text">Destaca tus productos con fotografías profesionales.</p>
                         </div>
                     </div>
                 </div>
@@ -219,7 +231,7 @@
                         <img src="images/servicios/producto-modelo/tattoo1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Tattoo</h5>
-                            <p class="card-text">Aumentá tus ventas en línea con fotografías de productos...</p>
+                            <p class="card-text">Aumentá tus ventas en línea con fotografías de productos.</p>
                         </div>
                     </div>
                 </div>
@@ -229,7 +241,7 @@
                         <img src="images/servicios/producto-modelo/gym.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Gym</h5>
-                            <p class="card-text">Potencia tus campañas de marketing...</p>
+                            <p class="card-text">Potencia tus campañas de marketing.</p>
                         </div>
                     </div>
                 </div>
@@ -319,7 +331,7 @@
     <h2 class="text-center">Video Profesional</h2>
     <div class="contenedor-servicio d-flex justify-content-center flex-wrap">
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
+            <div class="card videos">
                 <div class="video-container">
                     <video id="Video" controls preload="none" controls src="images/servicios/videos-musicales/vp2.mp4" type="video/mp4" poster=""></video>
                 </div>
@@ -330,7 +342,7 @@
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
+            <div class="card videos">
                 <div class="video-container">
                     <video id="Video" controls preload="none" controls src="images/servicios/videos-musicales/vp1.mp4" type="video/mp4" poster=""></video>
                 </div>
@@ -341,7 +353,7 @@
             </div>
         </div>
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="card">
+            <div class="card videos">
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/6WvWYXGFTOg" frameborder="0"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
